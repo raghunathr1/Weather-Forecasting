@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background: linear-gradient(to right, #92e9cf, #3596ce, rgb(131, 189, 184),rgb(53, 134, 128));
+  border: solid black 4px;
+}
+
+/* Header */
+.header {
+  border: solid black 3px;
+  background: linear-gradient(to right, #78e414, #06ec94, rgb(203, 221, 45),rgb(207, 32, 9));
+  padding: 7px;
+}
+.image{
+  width: 100px;
+  height: 100px;
+  gap: 50px;
+  border-radius: 25%;
+  position: relative;
+  right: -50px;
+ }
+.h{
+  display: inline-block;
+  position: relative;
+  top: -40px;   
+  right: -150px;
+}
