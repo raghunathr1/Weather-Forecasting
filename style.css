@@ -42,3 +42,28 @@ body {
   margin: auto;
   padding: 20px;
 }
+/* WHEATHER ICON  */
+.weather-icon{
+  width: 120px;
+  height: 120px;
+  position: relative;
+  right: -130px;
+  top: -80px;
+}
+
+/* Background  according Wheather */
+.weather-clear {
+  background: linear-gradient(to right, #baece8, #8ba9cf, rgb(195, 235, 228));
+}
+
+.weather-cloudy {
+  background: linear-gradient(to right, #6e909c, #8ba9cf, rgb(113, 131, 158));
+}
+
+.weather-rainy {
+  background: linear-gradient(to right, rgb(5, 65, 94), rgb(28, 136, 131), rgb(17, 47, 110))
+}
+
+.weather-hot {
+  background: linear-gradient(to right, rgb(219, 155, 102),rgb(238, 78, 78), rgb(228, 76, 76));
+}
