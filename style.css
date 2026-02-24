@@ -133,3 +133,28 @@ button:hover {
     border-radius: 10px;
     text-align: center;
 }
+
+/* Forecast */
+.forecast-grid {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.forecast-card {
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+}
