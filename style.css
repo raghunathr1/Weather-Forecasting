@@ -24,3 +24,21 @@ body {
   top: -40px;   
   right: -150px;
 }
+/* Card */
+.card {
+  background: rgb(163, 226, 177);
+  padding: 20px;
+  margin-bottom: 20px;
+  border: solid black 3px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Layout */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
