@@ -1,11 +1,19 @@
 const API_KEY = "485f9bc87c18cb5fc1bb5f1d37d19882";
 const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
+//  DOM ELEMENTS
+
 const cityInput = document.getElementById("cityInput");
 const searchBtn = document.getElementById("searchBtn");
 const locationBtn = document.getElementById("locationBtn");
 const errorMessage = document.getElementById("errorMessage");
 const weatherIcon = document.getElementById("weatherIcon");
+
+const currentWeatherSection = document.getElementById("currentWeather");
+const forecastSection = document.getElementById("forecastSection");
+
+const cityNameEl = document.getElementById("cityName");
+const weatherConditionEl = document.getElementById("weatherCondition");
 
 //  STATE
 
@@ -102,3 +110,11 @@ async function fetchForecast(lat, lon) {
     showError("Unable to fetch forecast data.");
   }
 }
+// DISPLAY FUNCTIONS
+
+function displayCurrentWeather(data) {
+  currentWeatherSection.classList.remove("hidden");
+  forecastSection.classList.remove("hidden");
+
+  cityNameEl.textContent = data.name;
+  weatherConditionEl.textContent = data.weather[0].description;
