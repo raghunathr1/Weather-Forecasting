@@ -33,5 +33,40 @@
 
       <p id="errorMessage" class="error hidden"></p>
     </section>
+  <!-- Current Weather -->
+    <section id="currentWeather" class="card hidden">
+
+      <div class="weather-top">
+        <div>
+          <h2 id="cityName"></h2>
+          <img id="weatherIcon" class="weather-icon">
+          <p id="weatherCondition"></p>
+        </div>
+
+        <div class="temp-box">
+          <p id="temperature"></p>
+          <button id="unitToggle">Toggle °C / °F</button>
+        </div>
+      </div>
+
+      <div class="weather-grid">
+        <div class="info-box">
+          <p>💧 Humidity</p>
+          <p id="humidity"></p>
+        </div>
+
+        <div class="info-box">
+          <p>💨 Wind Speed</p>
+          <p id="wind"></p>
+        </div>
+
+        <div class="info-box">
+          <p>🌡 Alert</p>
+          <p id="alertMessage"></p>
+        </div>
+      </div>
+
+    </section>
+
 </body>
 </html>
