@@ -145,9 +145,19 @@ function displayCurrentWeather(data) {
 function displayForecast(list) {
   forecastCardsContainer.innerHTML = "";
 
-  const daily = list.filter(item => item.dt_txt.includes("12:00:00"));
+  const dailyData = {};
 
-  daily.slice(1, 6).forEach(day => {
+  // Pick one forecast per day
+  list.forEach(item => {
+    const date = item.dt_txt.split(" ")[0];
+
+    if (!dailyData[date]) {
+      dailyData[date] = item;
+    }
+  });
+
+  const dailyArray = Object.values(dailyData).slice(1, 6);
+    dailyArray.forEach(day => {
     const card = document.createElement("div");
     card.className = "forecast-card";
 
