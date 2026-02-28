@@ -42,6 +42,13 @@ The application focuses on:
 
 # Key Features
 
+# Emoji or temperature symbol
+  -symbol from - https://emojipedia.org/
+    -temperature 🌡️
+    -droplet 💧
+    -cloud 💨
+    -weather alert ❗
+
 # Location-Based Weather
 - Search weather using city name
 - Get weather using location API
